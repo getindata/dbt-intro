@@ -106,6 +106,13 @@ You are now inside managed Vertex AI Workbench instance, which will serve as our
   
   >-> Tip: you can find documentation on models on https://docs.getdbt.com/docs/building-a-dbt-project/building-models
 
+  >-> Tip: Ideas for transformations based on example data
+  >        
+>> provide mapping between real country names and identifiers found in raw_mapping.country
+  >>        
+>> find out which country had most total sales 
+  >>        
+>> provide a metric on monthly revenue by month
 5. Execute everything and look results in your personal schema.
 
 6. Enrich your seeds, sources and models with descriptions and additional tests f.e. with dbt-expectations plugin. https://github.com/calogica/dbt-expectations

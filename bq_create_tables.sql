@@ -1,6 +1,16 @@
 CREATE SCHEMA IF NOT EXISTS raw_mapping;
 CREATE SCHEMA IF NOT EXISTS raw_sales;
 CREATE SCHEMA IF NOT EXISTS raw_users;
+
+DROP TABLE IF EXISTS raw_mapping.product;
+DROP TABLE IF EXISTS raw_mapping.country;
+DROP TABLE IF EXISTS raw_mapping.city;
+DROP TABLE IF EXISTS raw_mapping.store;
+DROP TABLE IF EXISTS raw_users.users;
+DROP TABLE IF EXISTS raw_mapping.status_name;
+DROP TABLE IF EXISTS raw_sales.sale;
+DROP TABLE IF EXISTS raw_sales.order_status;
+
 -- Creation of product table
 CREATE TABLE IF NOT EXISTS raw_mapping.product (
   product_id INT NOT NULL,
